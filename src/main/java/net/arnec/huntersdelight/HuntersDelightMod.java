@@ -1,6 +1,10 @@
 package net.arnec.huntersdelight;
 
 import com.mojang.logging.LogUtils;
+import net.arnec.huntersdelight.item.ModCreativeModeTabs;
+import net.arnec.huntersdelight.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -29,7 +33,9 @@ public class HuntersDelightMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
 
+        ModItems.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -47,7 +53,10 @@ public class HuntersDelightMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SALT);
+            event.accept(ModItems.SALT_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
