@@ -60,6 +60,10 @@ public class HuntersDelightMod
             event.accept(ModBlocks.SALT_ORE);
             event.accept(ModItems.HIDE);
         }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.SALT_ORE);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
