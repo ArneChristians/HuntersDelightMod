@@ -1,6 +1,7 @@
 package net.arnec.huntersdelight.item;
 
 import net.arnec.huntersdelight.HuntersDelightMod;
+import net.arnec.huntersdelight.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,8 +19,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.huntersdelight_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SALT.get());
-                        output.accept(ModItems.SALT_ORE.get());
                         output.accept(ModItems.HIDE.get());
+                        output.accept(ModBlocks.SALT_ORE.get());
+                        output.accept(ModBlocks.SALT_BLOCK.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,8 +1,9 @@
 {
   "item.huntersdelight.salt": "Salt",
-  "item.huntersdelight.salt_ore": "Salt Ore",
   "item.huntersdelight.hide": "Hide",
 
+  "block.huntersdelight.salt_ore": "Salt Ore",
+  "block.huntersdelight.salt_block": "Salt Block",
 
 
   "creativetab.huntersdelight_items": "Hunters Delight"

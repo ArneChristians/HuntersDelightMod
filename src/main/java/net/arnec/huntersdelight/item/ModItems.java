@@ -12,8 +12,6 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, HuntersDelightMod.MOD_ID);
 
     //Salt Items
-    public static final RegistryObject<Item> SALT_ORE = ITEMS.register("salt_ore",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HIDE = ITEMS.register("hide",

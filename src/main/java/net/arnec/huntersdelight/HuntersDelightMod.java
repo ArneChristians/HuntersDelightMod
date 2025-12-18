@@ -1,6 +1,7 @@
 package net.arnec.huntersdelight;
 
 import com.mojang.logging.LogUtils;
+import net.arnec.huntersdelight.block.ModBlocks;
 import net.arnec.huntersdelight.item.ModCreativeModeTabs;
 import net.arnec.huntersdelight.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -36,6 +37,7 @@ public class HuntersDelightMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -55,7 +57,7 @@ public class HuntersDelightMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SALT);
-            event.accept(ModItems.SALT_ORE);
+            event.accept(ModBlocks.SALT_ORE);
             event.accept(ModItems.HIDE);
         }
     }
