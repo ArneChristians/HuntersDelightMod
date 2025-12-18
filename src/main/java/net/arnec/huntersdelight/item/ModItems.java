@@ -16,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HIDE = ITEMS.register("hide",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SALT.get());
                         output.accept(ModItems.SALT_ORE.get());
+                        output.accept(ModItems.HIDE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

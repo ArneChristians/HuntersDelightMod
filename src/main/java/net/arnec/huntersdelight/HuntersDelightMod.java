@@ -56,6 +56,7 @@ public class HuntersDelightMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SALT);
             event.accept(ModItems.SALT_ORE);
+            event.accept(ModItems.HIDE);
         }
     }
 
