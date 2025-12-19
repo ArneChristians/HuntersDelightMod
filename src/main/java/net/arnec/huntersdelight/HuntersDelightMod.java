@@ -62,6 +62,7 @@ public class HuntersDelightMod
         }
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.SALT_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SALT_ORE);
         }
 
     }

@@ -25,6 +25,11 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of()
                             .strength(4f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> DEEPSLATE_SALT_ORE = registerBlock("deepslate_salt_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1, 2),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f).requiresCorrectToolForDrops()));
+
     //Blocks
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
             () -> new Block(BlockBehaviour.Properties.of()

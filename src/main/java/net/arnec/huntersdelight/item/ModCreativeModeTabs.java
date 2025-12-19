@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SALT.get());
                         output.accept(ModItems.HIDE.get());
                         output.accept(ModBlocks.SALT_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SALT_ORE.get());
                         output.accept(ModBlocks.SALT_BLOCK.get());
                     }).build());
 
