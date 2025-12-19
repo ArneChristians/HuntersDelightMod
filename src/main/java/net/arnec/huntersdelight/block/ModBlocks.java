@@ -35,6 +35,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> COMPRESSED_SALT_BLOCK = registerBlock("compressed_salt_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
 
 
     private static <T extends  Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SALT_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_SALT_ORE.get());
                         output.accept(ModBlocks.SALT_BLOCK.get());
+                        output.accept(ModBlocks.COMPRESSED_SALT_BLOCK.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
